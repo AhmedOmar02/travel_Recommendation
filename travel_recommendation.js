@@ -83,3 +83,6 @@ function clearSearch() {
     document.getElementById('nameInput').value = ''; // Clear input field
     document.getElementById('results').innerHTML = ''; // Remove search results
 }
+document.getElementById("nameInput").addEventListener("input", searchByName);
+
+
