@@ -1,3 +1,6 @@
 title: Travel Recommendation
 description: A website offering travel recommendations.
 theme: minima
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
