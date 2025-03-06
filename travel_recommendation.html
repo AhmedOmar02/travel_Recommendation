@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="./css files/travel_recommendation.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-group">
+            <img src="./images/icon.png" alt="Logo" class="logo">
+            <span class="brand-name">TravelBloom</span>
+        </div>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="./travel_recommendation.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./contact_us.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input id="nameInput" type="text" placeholder="Enter a destination country or keyword">
+            <button id="search_btn" onclick="searchByName()">Search</button>
+            <button id="clear" onclick="clearSearch()">Clear</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>COME<br>VIST<br>GAZA</h1>
+            <p>Here is what Gaza looked like before the war, don't worry after rebuilding Gaza it will look even
+                better.<br>Then you can come visit but don't bring Trump with you. XO</p>
+            <button class="book-now">BOOK NOW</button>
+        </div>
+    </header>
+
+    <!-- Add a container below the search bar where the results will be shown -->
+    <div id="results" class="results-container"></div>
+
+    <script src="./travel_recommendation.js"></script>
+</body>
+
+</html>

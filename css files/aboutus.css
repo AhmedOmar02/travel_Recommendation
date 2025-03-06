@@ -1,0 +1,143 @@
+/* Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body - Remove Scrolling */
+body {
+    background: url('../images/gaza.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    /* Ensure the body takes full height */
+    overflow: hidden;
+    /* Prevent scrolling */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.logo {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+/* Main Container */
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.hero h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* About Content */
+.about-content {
+    max-width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/* Team Section */
+.team-section {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    /* Centers team members */
+    align-items: center;
+    /* Aligns them vertically */
+    gap: 50px;
+    /* Space between members */
+    bottom: 30px;
+    flex-wrap: nowrap;
+    /* Prevents wrapping to a new line */
+}
+
+
+.team-member {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+
+}
+
+.team-member img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    font-size: 14px;
+}
+
+.team-member p {
+    font-size: 12px;
+}
+
+.role {
+    display: block;
+    background: #00aaff;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+}

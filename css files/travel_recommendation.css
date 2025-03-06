@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/gaza.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Keeps the background still */
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo & Brand */
+.logo-group {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-btn,
+.clear-btn {
+    border: none;
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.clear-btn {
+    background: red;
+}
+
+.hero {
+    height: 100vh;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+/* The text container inside .hero */
+.hero-content {
+    background: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent dark background */
+    backdrop-filter: blur(1.5px);
+    /* Apply the blur effect */
+    padding: 20px;
+    border-radius: 10px;
+    /* Optional: rounded corners */
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin: 15px 0;
+    width: 80%;
+}
+
+/* Book Now Button */
+.book-now {
+    background: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-now:hover {
+    background: #0088cc;
+}
+
+/* Social Media Icons */
+.social-icons {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.social-icons a:hover {
+    color: #00aaff;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.about-content {
+    max-width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+/* Team Section */
+.team-section {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    /* Centers team members */
+    align-items: center;
+    /* Aligns them vertically */
+    gap: 50px;
+    /* Space between members */
+    bottom: 30px;
+    flex-wrap: nowrap;
+    /* Prevents wrapping to a new line */
+}
+
+
+.team-member {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+
+}
+
+.team-member img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    font-size: 14px;
+}
+
+.team-member p {
+    font-size: 12px;
+}
+
+.role {
+    display: block;
+    background: #00aaff;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Styling for the results container */
+.results-container {
+    width: 100%;
+    max-height: 300px;
+    /* Adjust this to your desired height */
+    overflow-y: auto;
+    /* Adds scroll functionality if content exceeds the max-height */
+    margin-top: 20px;
+    /* Space between the search bar and results */
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling for each result */
+.results-container div {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.results-container h3 {
+    margin: 0;
+    font-size: 100px;
+    color: #333;
+}
+
+.results-container h4 {
+    margin: 5px 0;
+    color: #555;
+    font-size: 50px;
+
+}
+
+.results-container img {
+    width: 60px;
+    height: 60px;
+    /* Set a max width for the images */
+    border-radius: 50%;
+
+    margin-top: 10px;
+}
+
+.results-container p {
+    color: #666;
+    font-size: 12px;
+}
+
+/* Style the search results container */
+#results {
+    position: absolute;
+    top: 60px;
+    /* Adjust to be right under the search bar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 300px;
+    /* Makes it scrollable when too many results */
+    padding: 10px;
+    z-index: 1000;
+}
+
+
+/* Style each result item */
+.result-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+/* Style the result images */
+.result-item img {
+    width: 80px;
+    /* Set a fixed width */
+    height: 80px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensures the image fits within the box */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Style the result text */
+.result-item h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+.result-item p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #666;
+}
+
+/* No results message */
+.no-results {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
